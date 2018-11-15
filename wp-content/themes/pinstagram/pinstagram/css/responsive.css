@@ -1,0 +1,296 @@
+/*-----------------------------------------------
+/* Responsive
+/*---------------------------------------------*/
+.main-container { max-width: 96%; }
+@media screen and (max-width:1450px) { 
+    img{
+        max-width: 100%;
+        height: auto!important;
+    }
+    .shareit {
+        position: relative!important;
+        width: 100%!important;
+        top: 0!important;
+        margin: 0!important;
+        padding: 10px 0!important;
+        -webkit-box-shadow: none!important;
+        -moz-box-shadow: none!important;
+        box-shadow: none!important;
+        background-color: transparent!important;
+    }
+}
+@media screen and (max-width:1200px) { 
+    #header { max-width: 96% }
+}
+@media screen and (max-width:1000px) { 
+    .main-header { position: relative!important; }
+    .secondary-navigation.mobile {
+        left: 0;
+        float: left;
+        margin-top: 0;
+        width: 100%;
+        background: #444;
+    }
+    .secondary-navigation.mobile, .mobile #navigation {
+        border: none!important;
+        background: #222;
+    }
+    .secondary-navigation { display: none }
+    .secondary-navigation.mobile {
+        position: absolute!important;
+        min-height: 43px;
+        top: 0px!important;
+        left: auto;
+        right: 0;
+        width: 74%;
+        visibility: hidden;
+        -webkit-transition: visibility 0 linear;
+        -webkit-transition-delay: 0.4s;
+        -moz-transition: visibility 0 linear 0.4s;
+        -o-transition: visibility 0 linear 0.4s;
+        transition: visibility 0 linear 0.4s;
+        z-index: -999;
+        height: 100%;
+    }
+    .mobile #navigation .menu a, #navigation .menu [class^="icon-"] > a, #navigation .menu [class*=" icon-"] > a {
+        color: #fff!important;
+        padding-right: 0!important;
+        line-height: 2!important;
+        padding-left: 18px!important;
+    
+        width: 100%;
+}
+    .mobile #navigation .menu {
+        float: left;
+        background: transparent;
+    }
+    .mobile #navigation ul ul {
+        display: block!important;
+        opacity: 1!important;
+        position: relative;
+        left: 0!important;
+        border: 0;
+        width: 100%;
+        visibility: visible!important;
+    }
+    .navigation-is-visible .mobile #navigation ul ul {
+        visibility: visible!important;
+        overflow: hidden;
+    
+        background: transparent;
+}
+    .mobile #navigation ul li li {
+        background: transparent;
+        border: 0;
+    }
+    .mobile #navigation {
+        height: auto;
+        width: 100%;
+        float: left;
+        display: block;
+    }
+    .mobile #navigation ul {
+        width: 100%;
+        height: auto;
+    }
+    .mobile #navigation li, .mobile #navigation ul li li {
+        width: 100%!important;
+        float: left;
+        position: relative;
+        background: rgba(0, 0, 0, 0)!important;
+        z-index: 100;
+    }
+    .secondary-navigation li:hover, .secondary-navigation a:hover, #navigation ul .current-menu-item, #navigation ul .sfHover a, #navigation ul ul .sfHover a { background: transparent; }
+    .mobile #navigation ul li:after { background: transparent }
+    .mobile #navigation ul li:before { display: none }
+    .mobile #navigation li a { border-bottom: 1px solid #161616!important }
+    .mobile #navigation ul li a:after { display: none }
+    .mobile #navigation a { text-align: left }
+    a#pull {
+        display: block;
+        background-color: rgba(34, 34, 34, 0.29);
+        width: 46px;
+        color: #fff;
+        padding: 10px 0;
+        float: none;
+        position: absolute;
+        text-indent: -999em;
+        right: 0;
+        z-index: 9999;
+    }
+    a#pull:after {
+        content: "";
+        background: url('images/nav-icon.png') no-repeat;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        position: absolute;
+        left: 14px;
+        top: 10px;
+    }
+    .secondary-navigation #navigation ul .sfHover a, .secondary-navigation #navigation ul li:hover, .secondary-navigation #navigation ul .sfHover ul li { background: rgba(0, 0, 0, 0)!important }
+    .mobile #navigation .sf-sub-indicator { display: none }
+    .mobile #headersearch { display: none }
+    .navigation-is-visible .secondary-navigation.mobile {
+        visibility: visible;
+        z-index: 1;
+        display: block;
+        -webkit-transition: z-index 0 linear;
+        -webkit-transition-delay: 0.4s;
+        -moz-transition: z-index 0 linear 0.4s;
+        -o-transition: z-index 0 linear 0.4s;
+        transition: z-index 0 linear 0.4s;
+    }
+    .main-container-wrap {
+        z-index: 1000;
+        min-height: 350px;
+        height: 100%;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+        transform: none;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+    }
+    .navigation-is-visible .main-container-wrap {
+        -webkit-transform: translateX(-74%);
+        -moz-transform: translateX(-74%);
+        -ms-transform: translateX(-74%);
+        -o-transform: translateX(-74%);
+        transform: translateX(-74%);
+    }
+    .head-social { margin-right: 30px; }
+    #move-to-top {
+        margin-right: 0;
+        right: 5px;
+    }
+}
+@media screen and (max-width:960px) {
+    .ad-300 img { max-width: 100% }
+    .ad-125 li { max-width: 40% }
+    .ad-125 img {
+        padding: 0;
+        background: #FAFAFA;
+        border: 0;
+    }
+    .addon-title {
+        font-size: 16px !important;
+    }
+}
+@media screen and (max-width:900px) { 
+    .widget-header { max-width: 70% }
+}
+@media screen and (max-width:865px) { 
+    #page, .container { max-width: 96%;}
+    footer .container { padding: 0 2%; }
+}
+@media screen and (max-width:728px) { 
+     #header h1, #header h2, .site-description {
+        float: none;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    
+        padding-left: 0;
+        padding-bottom: 0;
+}
+    #header h1, #header h2 { border: 0; font-size: 36px; }
+}
+@media screen and (max-width:720px) { 
+    .article { width: 100% }
+    #content_box {
+        padding-right: 0px;
+        padding-left: 0px!important;
+    }
+    .title {
+        font-size: 18px!important;
+    }
+    .addon-title {
+        font-size: 16px !important;
+    }
+    .sidebar.c-4-12 {
+        clear: both;
+        float: none;
+        width: 96% !important;
+        overflow: hidden;
+        margin: 0 auto;
+}
+    .f-widget { width: 44% }
+    .f-widget-2 { margin-right: 0 }
+    .ad-125 li { max-width: 45% }
+    #comments { margin-right: 0 }
+}
+@media screen and (max-width:600px) { 
+    .featured-thumbnail img { width: 100% }
+}
+@media screen and (max-width:550px) { 
+    .sbutton { float: right }
+    .f-widget { width: 100%; margin-right: 0;}
+    .head-social { float: left; margin-right: 0; }
+    .head-social ul li.head-search .icon-search { display: none }
+    .head-social ul li.head-search { display: block; width: 100% }
+    .head-social ul ul {
+        display: block;
+        left: 0;
+        top: 0;
+        position: relative;
+        width: 100%;}
+    .head-social ul ul #searchform fieldset { padding-left: 0 }
+    #comments .avatar,
+    .postauthor img {
+        width: 20%
+    }
+    .single_post { width: 100% }
+    .related-posts2 { 
+        margin: 0 2.5%;
+        width: 95%;
+    }
+    .related-posts2 li { width: 30%; margin-right: 2%; }
+}
+@media screen and (max-width:480px) { 
+    .post-content-in {
+        margin: 0;
+        width: 100%;
+    }
+    .addon-content {
+        float: left;
+        margin: 0 0 30px;
+        width: 95%;
+    }
+    .related-posts .relatepostli4 { padding-bottom: 15px; border-bottom: 1px solid #CCC; margin-bottom: 11px;}
+    .one_half, .one_third, .two_third, .three_fourth, .one_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth, .one_sixth, .five_sixth {
+        width: 100%;
+        margin-right: 0;
+    }
+    .copyrights { text-align: center }
+    .top { width: 100% }
+    #cancel-comment-reply-link { top: -40px }
+    .related-posts li {
+        width: 100%;
+        float: left!important;
+        max-width: 100%;
+        margin: 0 0 10px;
+    }
+    .related-posts2 li { width: 45%; margin-right: 3%}
+    .related-posts2 li:nth-child(3n+3) { margin-right: 3%; }
+}
+@media screen and (max-width:400px) { 
+    article header { overflow: hidden }
+    .slidertitle { font-size: 14px }
+    .slidertext { display: none }
+    #commentform textarea { width: 96% }
+}
+@media screen and (max-width:400px) {
+    .head-social { width: 100%; margin-right: 0;}
+}
+@media screen and (max-width:320px) { 
+    .latestPost {
+        float: none;
+        width: 100% !important;
+    }
+    .latest-cat-post #featured-thumbnail { width: 100%; max-width: 100%;}
+    .latest-cat-post #featured-thumbnail .featured-thumbnail { float: none; }
+}
